@@ -15,6 +15,7 @@ var doTheyHaveAllThePigs = false
 var partsOfTheRiverDiamond = 0.0
 var tribeLeaderToFind = 8
 var foundAllTheLeaders = false
+//
 
 func chapterFour() {
     print( "On a mission to find the cure \(theGirl), \(theFriends) ran frantical look for book on what happen on \(theIsland).")
