@@ -3,10 +3,44 @@
 //  CLIStoryTemplate
 //
 
+//
+//  Chapter4.swift
+//  CLIStoryTemplate
+//
+
 import Foundation
+let theHouse: String = "Cobra House"
+let theTown: String = "Detroit"
+let theGirl: String = "Thea"
+let theFriends = "Amy & Kisha"
+let theMonsters = "Zombies"
+let theIsland = "Snake Isle"
+var magicalPigsCollected = 0
+var doTheyHaveAllThePigs = false
+var partsOfTheRiverDiamond = 0.0
+var tribeLeaderToFind = 8
+var foundAllTheLeaders = false
+var foundAMonster:Bool = false
+var theMonster = "swamp thing"
+var didMonsterGetThem:Bool = false
+var isBraveryActivated:Bool = false
 
 func seenAMonster(){
-    print("Run as Fast as they can until they escape away from the monsters")
+    print("Run as Fast as they can until ")
+}
+func ChasedByMonster(){
+    if didMonsterGetThem == true{
+        print(" the monster caught up and ate them up")
+    }else{
+        print("they got away")
+    }
+}
+
+func liveOrDie(){
+    if foundAMonster == true{
+        seenAMonster()
+        ChasedByMonster()
+    }
 }
 func chapterFour() {
     func actOne(){  print( "On a mission to find the cure \(theGirl), \(theFriends) ran frantical look for book on what happen on \(theIsland).")
@@ -27,3 +61,4 @@ func chapterFour() {
    
     
 }
+
