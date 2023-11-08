@@ -34,8 +34,7 @@ let Family = [thea, uncle, aunt]
 let noticedSomethingWrong:Bool = true
 
 func chapterFour() {
-    
-    func actOne(){  if isThea(name: thea.name) {
+    if isThea(name: thea.name) {
         story = .doomed
         print("After Thea discovered the tragic revelation that she would meet the same fate as her parents, she embarked on a frantic quest to find a cure.")
     } else {
@@ -69,6 +68,6 @@ func chapterFour() {
         print("Inquisitively, the young girl, much like her mother, asked, 'Why shouldn't we go into that house?'")
         
         print("The story ends, leaving behind a lingering sense of mystery and a tale of fate that spans generations.")
-    }
+    
 }
 
