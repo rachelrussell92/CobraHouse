@@ -30,7 +30,7 @@ var story: Reaper?
 let thea = Person(name: "Thea", age: 30)
 let uncle = Person(name: "Uncle", age: 50)
 let aunt = Person(name: "Aunt", age: 45)
-let family = [thea, uncle, aunt]
+let Family = [thea, uncle, aunt]
 let noticedSomethingWrong:Bool = true
 
 func chapterFour() {
@@ -65,7 +65,7 @@ func chapterFour() {
             print("She was seconds too late with the injection, and her fate was sealed but she didnt notice.")
         }
         print("She passed away after giving birth to her child, who was left in the care of her aunt and uncle.")
-        print("Years later, as Thea's daughter walked with her \(family[2].name) and \(family[1].name) past the that old house, she gazed curiously at it.")
+        print("Years later, as Thea's daughter walked with her \(Family[2].name) and \(Family[1].name) past the that old house, she gazed curiously at it.")
         print("Inquisitively, the young girl, much like her mother, asked, 'Why shouldn't we go into that house?'")
         
         print("The story ends, leaving behind a lingering sense of mystery and a tale of fate that spans generations.")
