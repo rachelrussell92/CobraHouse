@@ -9,56 +9,66 @@
 //
 
 import Foundation
-let theHouse: String = "Cobra House"
-let theTown: String = "Detroit"
-let theGirl: String = "Thea"
-let theFriends = "Amy & Kisha"
-let theMonsters = "Zombies"
-let theIsland = "Snake Isle"
-var magicalPigsCollected = 0
-var doTheyHaveAllThePigs = false
-var partsOfTheRiverDiamond = 0.0
-var tribeLeaderToFind = 8
-var foundAllTheLeaders = false
-var foundAMonster:Bool = false
-var theMonster = "swamp thing"
-var didMonsterGetThem:Bool = false
-var isBraveryActivated:Bool = false
 
-func seenAMonster(){
-    print("Run as Fast as they can until ")
-}
-func ChasedByMonster(){
-    if didMonsterGetThem == true{
-        print(" the monster caught up and ate them up")
-    }else{
-        print("they got away")
-    }
+
+struct Person {
+    var name: String
+    var age: Int
 }
 
-func liveOrDie(){
-    if foundAMonster == true{
-        seenAMonster()
-        ChasedByMonster()
-    }
+enum Reaper {
+    case notDoomed
+    case doomed
 }
+
+func isThea(name: String) -> Bool {
+    return name == "Thea"
+}
+
+var story: Reaper?
+
+let thea = Person(name: "Thea", age: 30)
+let uncle = Person(name: "Uncle", age: 50)
+let aunt = Person(name: "Aunt", age: 45)
+let family = [thea, uncle, aunt]
+let noticedSomethingWrong:Bool = true
+
 func chapterFour() {
-    func actOne(){  print( "On a mission to find the cure \(theGirl), \(theFriends) ran frantical look for book on what happen on \(theIsland).")
-        print( "The went back to \(theTown) looking for any one or any book to help them.")
-        print( "They stump across an old lady that told them a story about \(theIsland)")
-        print( "She told the that after the People of \(theTown) getting the island from the indians they didnt fully pay them but wouldnt give the land back. ")
-        print( "So they put a curse on the island and snakes from near and wide convegred on the island which made it inhabitable ")
-        print( " The natives of \(theTown) in there fury tried to do everything to clear the snake.")
-        print("It only made the snake more ferious which cause them to move from the island and into \(theTown), the snakes started to attack the people and kill them.")
-        print("The people of \(theTown) finally had enough so they beg the cheif to make them go away.")
-        print("Once they repaid the indians the Chief fianlly told them they need to go to the three parts of \(theTown) and find and collect the three magical pigs.")
-        print("Then slide on all the tribe leader and collect part of the River Diamond ")
-    }
-    func actTwo(){
-        
-        
-    }
-   
     
+    func actOne(){  if isThea(name: thea.name) {
+        story = .doomed
+        print("After Thea discovered the tragic revelation that she would meet the same fate as her parents, she embarked on a frantic quest to find a cure.")
+    } else {
+        story = .notDoomed
+        print("She just chilled and didnt worry about it and let the time pass .")
+    }
+        print("Guided by an old book she stumbled upon, which mentioned Snake Island, she sought out the wisdom of an elderly Indian man rumored to hold the key to her salvation.")
+        
+        print("Eagerly, Thea inquired, \"Can you help me find the cure mentioned in the ancient texts? It's my only hope to escape the same fate as my parents.\"")
+        
+        print("The old man nodded gravely, \"The cure lies in the mystic pig's blood.\" ")
+        
+        switch story {
+        case .notDoomed:
+            print("For a year, she lived in hope, believing that her troubles were behind her.")
+        case .doomed:
+            print("Determined to secure this elusive remedy, Thea scoured Belle Island, facing numerous trials and obstacles along the way.")
+        default: print("")
+        }
+        print("Eventually, she managed to locate the elusive pig and skillfully extracted its blood.")
+        
+        print("Returning to the old man, Thea watched with anticipation as he performed a mystical ritual and injected her with the pig's life-giving blood. For a year, she lived in hope, believing that her troubles were behind her.")
+        
+        if noticedSomethingWrong {
+            print("However, one fateful day, she sensed something was amiss. Her health was rapidly deteriorating, and it became painfully evident that she had been seconds too late with the injection. Her fate was sealed.")
+        } else {
+            print("She was seconds too late with the injection, and her fate was sealed but she didnt notice.")
+        }
+        print("She passed away after giving birth to her child, who was left in the care of her aunt and uncle.")
+        print("Years later, as Thea's daughter walked with her \(family[2].name) and \(family[1].name) past the that old house, she gazed curiously at it.")
+        print("Inquisitively, the young girl, much like her mother, asked, 'Why shouldn't we go into that house?'")
+        
+        print("The story ends, leaving behind a lingering sense of mystery and a tale of fate that spans generations.")
+    }
 }
 
